@@ -39,7 +39,7 @@
       </button>
     </form>
     <div :class="`qr-code ${showQRCode ? 'active' : ''}`">
-      <img src="result" alt="QR code" :class="{ hidden: !showQRCode }" />
+      <img src="" alt="QR code" :class="{ hidden: !showQRCode }" />
     </div>
   </div>
 </template>
