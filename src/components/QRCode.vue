@@ -61,7 +61,7 @@ const handleQRCode = () => {
   const image = wrapper.querySelector("img");
 
   if (inputURL.value) {
-    image.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${
+    image.src = `https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=${
       inputURL.value
     }&color=${inputColor.value.substr(1)}&bgcolor=${inputBgcolor.value.substr(
       1,
