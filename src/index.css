@@ -42,7 +42,18 @@
     @apply bg-violet-500 hover:bg-violet-800 py-3 px-4 w-full rounded-md text-white;
   }
 
-  .qr-code {
+  form .option {
+    @apply flex gap-x-8 mb-4 p-2;
+  }
+
+  form .option :where(.input-color, .input-bgcolor) {
+    @apply flex items-center w-2/4;
+  }
+  form .option input {
+    @apply w-14 h-10 p-1 m-0 ml-2 rounded-sm;
+  }
+
+  form .option input .qr-code {
     @apply h-0 overflow-hidden;
   }
 
