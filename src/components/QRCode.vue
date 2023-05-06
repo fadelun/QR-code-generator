@@ -12,7 +12,8 @@
         v-model="inputURL"
         v-on:keyup="if (!inputURL) showQRCode = false;"
       />
-      <div class="option">
+      <div :class="`option ${!showQRCode ? 'hidden' : ''}`">
+        <!-- tampilkan jika qr code di generate -->
         <div class="input-color flex items-center w-2/4">
           <label for="color">color</label>
           <input
@@ -38,7 +39,8 @@
         Generate QR code
       </button>
     </form>
-    <div :class="`qr-code ${showQRCode ? 'active' : ''}`">
+    <div :class="`qr-code ${!showQRCode ? 'hidden' : ''}`">
+      <!-- tampilkan jika qr code di generate -->
       <img src="" alt="QR code" :class="{ hidden: !showQRCode }" />
     </div>
   </div>
